@@ -29,14 +29,35 @@ def do_sync(db: Session = Depends(get_db)):
     return RedirectResponse("/", status_code=303)
 
 @app.get("/customers")
-def customers(request: Request, q: str = "", db: Session = Depends(get_db)):
+def customers(request: Request, q: str = "", segment: str = "", db: Session = Depends(get_db)):
+    from datetime import datetime, timedelta
     query = db.query(models.Customer)
     if q:
         like = f"%{q}%"
         query = query.filter((models.Customer.first_name.ilike(like)) |
                              (models.Customer.last_name.ilike(like)) |
                              (models.Customer.email.ilike(like)))
-    return templates.TemplateResponse(request, "customers.html", {"customers": query.all(), "q": q})
+    rows = query.all()
+    cutoff = datetime.utcnow() - timedelta(days=30)
+
+    def spent(c):
+        return sum(o.total or 0 for o in c.orders if o.status != "cancelled")
+
+    def last_order(c):
+        dates = [o.created_at for o in c.orders if o.created_at]
+        return max(dates) if dates else None
+
+    rules = {
+        "vip": lambda c: spent(c) >= 5000,
+        "repeat": lambda c: len(c.orders) >= 2,
+        "new": lambda c: len(c.orders) == 0,
+        "at_risk": lambda c: last_order(c) is not None and last_order(c) < cutoff,
+    }
+    counts = {k: sum(1 for c in rows if f(c)) for k, f in rules.items()}
+    if segment in rules:
+        rows = [c for c in rows if rules[segment](c)]
+    return templates.TemplateResponse(request, "customers.html", {
+        "customers": rows, "q": q, "segment": segment, "counts": counts, "total": len(rows)})
 
 # ---------- Stage 2 ----------
 from datetime import datetime

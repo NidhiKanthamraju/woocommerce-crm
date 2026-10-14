@@ -20,3 +20,8 @@ def test_webhook_creates_order_and_sends_confirmation():
         "line_items": [{"name": "USB-C Cable", "price": 349, "quantity": 1}]})
     assert r.json()["ok"] is True
     assert "9001" in client.get("/customers/1").text
+
+def test_customer_segments():
+    client.post("/sync")
+    for seg in ["", "vip", "repeat", "new", "at_risk"]:
+        assert client.get(f"/customers?segment={seg}").status_code == 200

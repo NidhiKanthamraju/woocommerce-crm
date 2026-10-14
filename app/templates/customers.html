@@ -1,14 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 <h1 class="text-2xl font-bold mb-4">Customers</h1>
-<form class="mb-4"><input name="q" value="{{ q }}" placeholder="Search name or email" class="border rounded px-3 py-2 w-72">
-  <button class="bg-indigo-700 text-white px-4 py-2 rounded">Search</button></form>
+<div class="mb-4 flex gap-2 flex-wrap">
+  {% set tabs = [("", "All"), ("vip", "VIP (spent ₹5000+)"), ("repeat", "Repeat (2+ orders)"), ("new", "New (no orders)"), ("at_risk", "At risk (30+ days)")] %}
+  {% for key, label in tabs %}
+  <a href="/customers?segment={{ key }}&q={{ q }}"
+     class="px-3 py-1 rounded border {{ 'bg-indigo-700 text-white' if segment == key }}">{{ label }}{% if key %} ({{ counts[key] }}){% endif %}</a>
+  {% endfor %}
+</div>
+<form class="mb-4">
+  <input type="hidden" name="segment" value="{{ segment }}">
+  <input name="q" value="{{ q }}" placeholder="Search name or email" class="border rounded px-3 py-2 w-72">
+  <button class="bg-indigo-700 text-white px-4 py-2 rounded">Search</button>
+  <span class="text-sm text-gray-500 ml-2">{{ total }} customers</span>
+</form>
 <table class="w-full bg-white rounded shadow text-left">
-  <tr class="border-b font-semibold"><th class="p-3">Name</th><th>Email</th><th>City</th><th>Orders</th><th>Spent</th></tr>
+  <tr class="border-b font-semibold"><th class="p-3">Name</th><th>Email</th><th>City</th><th>Orders</th><th>Spent</th><th>Tags</th></tr>
   {% for c in customers %}
   <tr class="border-b hover:bg-gray-50">
-    <td class="p-3"><a class="text-indigo-700 underline" href="/customers/{{ c.id }}">{{ c.first_name }} {{ c.last_name }}</a></td><td>{{ c.email }}</td><td>{{ c.city }}</td>
+    <td class="p-3"><a class="text-indigo-700 underline" href="/customers/{{ c.id }}">{{ c.first_name }} {{ c.last_name }}</a></td>
+    <td>{{ c.email }}</td><td>{{ c.city }}</td>
     <td>{{ c.orders|length }}</td><td>₹{{ "%.0f"|format(c.orders|sum(attribute='total')) }}</td>
+    <td class="text-sm text-gray-500">{{ c.tags }}</td>
   </tr>
   {% endfor %}
 </table>
