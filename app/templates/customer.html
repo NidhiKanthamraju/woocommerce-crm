@@ -23,7 +23,7 @@
         <td>{{ o.created_at.strftime('%d %b %Y') }}</td><td>{{ o.status }}</td><td>₹{{ "%.0f"|format(o.total) }}</td></tr>
       {% endfor %}
     </table>
-    <h2 class="font-semibold mt-6 mb-2">Message timeline</h2>
+    <h2 class="font-semibold mt-6 mb-2">Message timeline</h2><div class="mb-3 flex gap-2"><input id="goal" name="goal" placeholder="Goal, e.g. offer a discount on accessories" class="border rounded flex-1 px-2 py-1"><button type="button" hx-post="/customers/{{ c.id }}/draft" hx-include="#goal" hx-target="#draft" class="bg-purple-600 text-white px-3 py-1 rounded">✨ Draft with AI</button></div><div id="draft"></div>
     {% for m in c.messages %}
     <div class="border-l-4 border-indigo-400 pl-3 mb-3">
       <div class="text-xs text-gray-500">{{ m.sent_at.strftime('%d %b %Y %H:%M') }} &middot; {{ m.kind }}</div>

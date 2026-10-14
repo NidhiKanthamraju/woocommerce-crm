@@ -18,7 +18,9 @@ def dashboard(request: Request, db: Session = Depends(get_db)):
         "orders": db.query(models.Order).count(),
         "revenue": db.query(func.coalesce(func.sum(models.Order.total), 0)).filter(models.Order.status == "completed").scalar(),
     }
-    return templates.TemplateResponse(request, "dashboard.html", {"stats": stats})
+    by_status = db.query(models.Order.status, func.count()).group_by(models.Order.status).all()
+    recent = db.query(models.Order).order_by(models.Order.created_at.desc()).limit(5).all()
+    return templates.TemplateResponse(request, "dashboard.html", {"stats": stats, "by_status": by_status, "recent": recent})
 
 @app.post("/sync")
 def do_sync(db: Session = Depends(get_db)):
@@ -126,3 +128,12 @@ def manual_message(cid: int, subject: str = Form(...), body: str = Form(...), db
     workflows.send_custom(db, c, "manual", subject, body)
     db.commit()
     return RedirectResponse(f"/customers/{cid}", status_code=303)
+
+# ---------- Stage 4: AI draft ----------
+from .services import ai
+
+@app.post("/customers/{cid}/draft")
+def ai_draft(cid: int, request: Request, goal: str = Form(""), db: Session = Depends(get_db)):
+    c = db.get(models.Customer, cid)
+    subject, body = ai.draft_email(c, goal)
+    return templates.TemplateResponse(request, "_draft.html", {"c": c, "subject": subject, "body": body})

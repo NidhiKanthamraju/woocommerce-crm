@@ -1,0 +1,6 @@
+<form action="/customers/{{ c.id }}/message" method="post" class="mb-4 space-y-2 bg-indigo-50 p-3 rounded">
+  <div class="text-xs text-indigo-700">AI draft - review and edit before sending</div>
+  <input name="subject" value="{{ subject }}" required class="border rounded w-full px-2 py-1">
+  <textarea name="body" rows="7" required class="border rounded w-full px-2 py-1">{{ body }}</textarea>
+  <button class="bg-indigo-700 text-white px-3 py-1 rounded">Send message</button>
+</form>
