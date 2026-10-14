@@ -7,7 +7,7 @@
   <tr class="border-b font-semibold"><th class="p-3">Name</th><th>Email</th><th>City</th><th>Orders</th><th>Spent</th></tr>
   {% for c in customers %}
   <tr class="border-b hover:bg-gray-50">
-    <td class="p-3">{{ c.first_name }} {{ c.last_name }}</td><td>{{ c.email }}</td><td>{{ c.city }}</td>
+    <td class="p-3"><a class="text-indigo-700 underline" href="/customers/{{ c.id }}">{{ c.first_name }} {{ c.last_name }}</a></td><td>{{ c.email }}</td><td>{{ c.city }}</td>
     <td>{{ c.orders|length }}</td><td>₹{{ "%.0f"|format(c.orders|sum(attribute='total')) }}</td>
   </tr>
   {% endfor %}

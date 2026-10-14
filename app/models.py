@@ -46,3 +46,15 @@ class Message(Base):
     body = Column(Text)
     sent_at = Column(DateTime, default=datetime.utcnow)
     customer = relationship("Customer", back_populates="messages")
+
+class OrderEvent(Base):
+    __tablename__ = "order_events"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    order_id = Column(Integer, ForeignKey("orders.id"))
+    status = Column(String)
+    note = Column(String, default="")
+    created_at = Column(DateTime, default=datetime.utcnow)
+    order = relationship("Order", back_populates="events")
+
+Order.events = relationship("OrderEvent", back_populates="order",
+                            order_by=OrderEvent.created_at, cascade="all, delete-orphan")

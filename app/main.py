@@ -34,3 +34,72 @@ def customers(request: Request, q: str = "", db: Session = Depends(get_db)):
                              (models.Customer.last_name.ilike(like)) |
                              (models.Customer.email.ilike(like)))
     return templates.TemplateResponse(request, "customers.html", {"customers": query.all(), "q": q})
+
+# ---------- Stage 2 ----------
+from datetime import datetime
+from fastapi import Form, HTTPException
+from .services.orders import set_status
+
+@app.get("/customers/{cid}")
+def customer_detail(cid: int, request: Request, db: Session = Depends(get_db)):
+    c = db.get(models.Customer, cid)
+    if not c:
+        raise HTTPException(404, "Customer not found")
+    return templates.TemplateResponse(request, "customer.html", {"c": c})
+
+@app.post("/customers/{cid}/notes")
+def save_notes(cid: int, notes: str = Form(""), tags: str = Form(""), db: Session = Depends(get_db)):
+    c = db.get(models.Customer, cid)
+    c.notes, c.tags = notes, tags
+    db.commit()
+    return RedirectResponse(f"/customers/{cid}", status_code=303)
+
+STATUSES = ["pending", "processing", "on-hold", "completed", "cancelled"]
+
+@app.get("/orders")
+def orders(request: Request, status: str = "", db: Session = Depends(get_db)):
+    query = db.query(models.Order).order_by(models.Order.created_at.desc())
+    if status:
+        query = query.filter(models.Order.status == status)
+    return templates.TemplateResponse(request, "orders.html",
+                                      {"orders": query.all(), "status": status, "statuses": STATUSES})
+
+@app.get("/orders/{oid}")
+def order_detail(oid: int, request: Request, db: Session = Depends(get_db)):
+    o = db.get(models.Order, oid)
+    if not o:
+        raise HTTPException(404, "Order not found")
+    return templates.TemplateResponse(request, "order.html", {"o": o, "statuses": STATUSES})
+
+@app.post("/orders/{oid}/status")
+def update_status(oid: int, status: str = Form(...), db: Session = Depends(get_db)):
+    o = db.get(models.Order, oid)
+    set_status(db, o, status, "Updated manually from CRM")
+    db.commit()
+    return RedirectResponse(f"/orders/{oid}", status_code=303)
+
+@app.post("/webhooks/woocommerce")
+async def woo_webhook(request: Request, db: Session = Depends(get_db)):
+    try:
+        p = await request.json()
+    except Exception:
+        return {"ok": True, "ignored": "not json (webhook ping)"}
+    if "id" not in p:
+        return {"ok": True, "ignored": "no order id"}
+    o = db.get(models.Order, p["id"])
+    if not o:
+        cid = p.get("customer_id") or None
+        if cid and not db.get(models.Customer, cid):
+            cid = None
+        o = models.Order(id=p["id"], customer_id=cid, status=p.get("status", "pending"),
+                         total=float(p.get("total") or 0), currency=p.get("currency", "INR"),
+                         created_at=datetime.utcnow())
+        o.items = [models.OrderItem(name=i["name"], price=float(i["price"]), quantity=i["quantity"])
+                   for i in p.get("line_items", [])]
+        db.add(o)
+        db.flush()
+        db.add(models.OrderEvent(order_id=o.id, status=o.status, note="Order created via webhook"))
+    elif "status" in p:
+        set_status(db, o, p["status"], "Updated via WooCommerce webhook")
+    db.commit()
+    return {"ok": True, "order_id": o.id, "status": o.status}

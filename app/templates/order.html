@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="/orders" class="text-indigo-700">&larr; Orders</a>
+<h1 class="text-2xl font-bold my-3">Order #{{ o.id }}</h1>
+<div class="grid grid-cols-2 gap-4">
+  <div class="bg-white p-4 rounded shadow">
+    <p><b>Customer:</b> {% if o.customer %}<a class="text-indigo-700 underline" href="/customers/{{ o.customer.id }}">{{ o.customer.first_name }} {{ o.customer.last_name }}</a>{% else %}Guest{% endif %}</p>
+    <p><b>Status:</b> {{ o.status }}</p><p><b>Total:</b> ₹{{ "%.0f"|format(o.total) }}</p>
+    <h2 class="font-semibold mt-4">Items</h2>
+    <ul class="list-disc ml-5">{% for i in o.items %}<li>{{ i.name }} x{{ i.quantity }} - ₹{{ "%.0f"|format(i.price) }}</li>{% endfor %}</ul>
+    <form action="/orders/{{ o.id }}/status" method="post" class="mt-4 flex gap-2">
+      <select name="status" class="border rounded px-2 py-1">
+        {% for s in statuses %}<option value="{{ s }}" {{ 'selected' if s == o.status }}>{{ s }}</option>{% endfor %}
+      </select>
+      <button class="bg-indigo-700 text-white px-3 py-1 rounded">Update status</button>
+    </form>
+  </div>
+  <div class="bg-white p-4 rounded shadow">
+    <h2 class="font-semibold mb-3">Status timeline</h2>
+    <div class="border-l-4 border-gray-300 pl-3 mb-3"><div class="text-xs text-gray-500">{{ o.created_at.strftime('%d %b %Y') }}</div>Order placed</div>
+    {% for e in o.events %}
+    <div class="border-l-4 border-indigo-400 pl-3 mb-3">
+      <div class="text-xs text-gray-500">{{ e.created_at.strftime('%d %b %Y %H:%M') }}</div>
+      <div class="font-medium">{{ e.status }}</div><div class="text-sm text-gray-500">{{ e.note }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

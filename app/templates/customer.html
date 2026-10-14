@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<a href="/customers" class="text-indigo-700">&larr; Customers</a>
+<h1 class="text-2xl font-bold my-3">{{ c.first_name }} {{ c.last_name }}</h1>
+<div class="grid grid-cols-3 gap-4">
+  <div class="bg-white p-4 rounded shadow col-span-1">
+    <h2 class="font-semibold mb-2">Details</h2>
+    <p>{{ c.email }}</p><p>{{ c.phone }}</p><p>{{ c.city }}</p>
+    <form action="/customers/{{ c.id }}/notes" method="post" class="mt-4 space-y-2">
+      <label class="text-sm text-gray-500">Tags (comma separated)</label>
+      <input name="tags" value="{{ c.tags }}" class="border rounded w-full px-2 py-1">
+      <label class="text-sm text-gray-500">Notes</label>
+      <textarea name="notes" rows="5" class="border rounded w-full px-2 py-1">{{ c.notes }}</textarea>
+      <button class="bg-indigo-700 text-white px-3 py-1 rounded">Save</button>
+    </form>
+  </div>
+  <div class="bg-white p-4 rounded shadow col-span-2">
+    <h2 class="font-semibold mb-2">Orders ({{ c.orders|length }})</h2>
+    <table class="w-full text-left">
+      <tr class="border-b"><th class="py-1">Order</th><th>Date</th><th>Status</th><th>Total</th></tr>
+      {% for o in c.orders %}
+      <tr class="border-b"><td class="py-1"><a class="text-indigo-700 underline" href="/orders/{{ o.id }}">#{{ o.id }}</a></td>
+        <td>{{ o.created_at.strftime('%d %b %Y') }}</td><td>{{ o.status }}</td><td>₹{{ "%.0f"|format(o.total) }}</td></tr>
+      {% endfor %}
+    </table>
+    <h2 class="font-semibold mt-6 mb-2">Message timeline</h2>
+    {% for m in c.messages %}
+    <div class="border-l-4 border-indigo-400 pl-3 mb-3">
+      <div class="text-xs text-gray-500">{{ m.sent_at.strftime('%d %b %Y %H:%M') }} &middot; {{ m.kind }}</div>
+      <div class="font-medium">{{ m.subject }}</div><div class="text-sm whitespace-pre-line">{{ m.body }}</div>
+    </div>
+    {% else %}<p class="text-gray-400">No messages yet.</p>{% endfor %}
+  </div>
+</div>
+{% endblock %}
