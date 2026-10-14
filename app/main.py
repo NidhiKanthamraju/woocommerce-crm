@@ -1,3 +1,4 @@
+import os, hmac, hashlib, base64, json
 from fastapi import FastAPI, Depends, Request
 from fastapi.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
@@ -82,8 +83,14 @@ def update_status(oid: int, status: str = Form(...), db: Session = Depends(get_d
 
 @app.post("/webhooks/woocommerce")
 async def woo_webhook(request: Request, db: Session = Depends(get_db)):
+    raw = await request.body()
+    secret = os.getenv("WOO_WEBHOOK_SECRET")
+    if secret:
+        expected = base64.b64encode(hmac.new(secret.encode(), raw, hashlib.sha256).digest()).decode()
+        if not hmac.compare_digest(expected, request.headers.get("X-WC-Webhook-Signature", "")):
+            raise HTTPException(401, "Invalid webhook signature")
     try:
-        p = await request.json()
+        p = json.loads(raw)
     except Exception:
         return {"ok": True, "ignored": "not json (webhook ping)"}
     if "id" not in p:
