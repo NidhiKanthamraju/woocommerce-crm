@@ -99,7 +99,30 @@ async def woo_webhook(request: Request, db: Session = Depends(get_db)):
         db.add(o)
         db.flush()
         db.add(models.OrderEvent(order_id=o.id, status=o.status, note="Order created via webhook"))
+        workflows.on_order_created(db, o)
     elif "status" in p:
         set_status(db, o, p["status"], "Updated via WooCommerce webhook")
     db.commit()
     return {"ok": True, "order_id": o.id, "status": o.status}
+
+# ---------- Stage 3: communication workflows ----------
+from .services import workflows
+
+@app.get("/workflows")
+def workflows_page(request: Request, db: Session = Depends(get_db)):
+    msgs = db.query(models.Message).order_by(models.Message.sent_at.desc()).limit(30).all()
+    return templates.TemplateResponse(request, "workflows.html", {
+        "templates": workflows.TEMPLATES, "messages": msgs,
+        "candidates": len(workflows.winback_candidates(db))})
+
+@app.post("/workflows/winback")
+def run_winback(db: Session = Depends(get_db)):
+    workflows.run_winback(db)
+    return RedirectResponse("/workflows", status_code=303)
+
+@app.post("/customers/{cid}/message")
+def manual_message(cid: int, subject: str = Form(...), body: str = Form(...), db: Session = Depends(get_db)):
+    c = db.get(models.Customer, cid)
+    workflows.send_custom(db, c, "manual", subject, body)
+    db.commit()
+    return RedirectResponse(f"/customers/{cid}", status_code=303)
