@@ -1,0 +1,15 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>WooCommerce CRM</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/htmx.org@1.9.12"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<nav class="bg-indigo-700 text-white px-6 py-3 flex gap-6 items-center">
+  <span class="font-bold text-lg">WooCRM</span>
+  <a href="/">Dashboard</a><a href="/customers">Customers</a>
+  <form action="/sync" method="post" class="ml-auto">
+    <button class="bg-white text-indigo-700 px-3 py-1 rounded">Sync WooCommerce</button>
+  </form>
+</nav>
+<main class="p-6 max-w-6xl mx-auto">{% block content %}{% endblock %}</main>
+</body></html>

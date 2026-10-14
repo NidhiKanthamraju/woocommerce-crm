@@ -1,0 +1,1876 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "first_name": "Jeet",
+      "last_name": "Bhatt",
+      "email": "dhingrachasmum@example.net",
+      "billing": {
+        "phone": "4496263444",
+        "city": "Thanjavur"
+      },
+      "date_created": "2026-03-03T14:25:09.519681"
+    },
+    {
+      "id": 2,
+      "first_name": "Ranbir",
+      "last_name": "Lata",
+      "email": "gavin84@example.net",
+      "billing": {
+        "phone": "01807210122",
+        "city": "Bardhaman"
+      },
+      "date_created": "2026-02-15T06:07:28.391017"
+    },
+    {
+      "id": 3,
+      "first_name": "Sai",
+      "last_name": "Dora",
+      "email": "zansirai@example.net",
+      "billing": {
+        "phone": "04896324737",
+        "city": "Malda"
+      },
+      "date_created": "2026-10-02T05:56:17.302877"
+    },
+    {
+      "id": 4,
+      "first_name": "Nisha",
+      "last_name": "Khosla",
+      "email": "jeremiah34@example.com",
+      "billing": {
+        "phone": "+917644642283",
+        "city": "Chapra"
+      },
+      "date_created": "2026-01-18T13:51:56.719060"
+    },
+    {
+      "id": 5,
+      "first_name": "Zansi",
+      "last_name": "Bakshi",
+      "email": "xray@example.org",
+      "billing": {
+        "phone": "+919252328792",
+        "city": "Rampur"
+      },
+      "date_created": "2026-01-02T12:12:19.366643"
+    },
+    {
+      "id": 6,
+      "first_name": "Anusha",
+      "last_name": "Gupta",
+      "email": "qbiswas@example.com",
+      "billing": {
+        "phone": "+914192447641",
+        "city": "Dibrugarh"
+      },
+      "date_created": "2026-03-10T09:52:49.299291"
+    },
+    {
+      "id": 7,
+      "first_name": "Eta",
+      "last_name": "Divan",
+      "email": "anamikachawla@example.org",
+      "billing": {
+        "phone": "07162627032",
+        "city": "Ramagundam"
+      },
+      "date_created": "2026-03-18T01:29:33.069881"
+    },
+    {
+      "id": 8,
+      "first_name": "Hiral",
+      "last_name": "Dhillon",
+      "email": "anshvarghese@example.net",
+      "billing": {
+        "phone": "06898763550",
+        "city": "Tirupati"
+      },
+      "date_created": "2026-06-02T18:59:24.666293"
+    },
+    {
+      "id": 9,
+      "first_name": "Jonathan",
+      "last_name": "Dhaliwal",
+      "email": "prakashvinaya@example.com",
+      "billing": {
+        "phone": "05836496772",
+        "city": "Aizawl"
+      },
+      "date_created": "2026-09-25T09:12:21.729711"
+    },
+    {
+      "id": 10,
+      "first_name": "Aadhya",
+      "last_name": "Sharma",
+      "email": "ddhingra@example.com",
+      "billing": {
+        "phone": "4938254950",
+        "city": "Guna"
+      },
+      "date_created": "2026-03-14T02:27:06.701358"
+    },
+    {
+      "id": 11,
+      "first_name": "Sarthak",
+      "last_name": "Pillay",
+      "email": "adixit@example.com",
+      "billing": {
+        "phone": "7490809466",
+        "city": "Amravati"
+      },
+      "date_created": "2026-03-03T16:02:56.022447"
+    },
+    {
+      "id": 12,
+      "first_name": "Viraj",
+      "last_name": "Kannan",
+      "email": "manderbalendra@example.net",
+      "billing": {
+        "phone": "02257095790",
+        "city": "Gulbarga"
+      },
+      "date_created": "2026-03-19T16:06:37.291998"
+    },
+    {
+      "id": 13,
+      "first_name": "Wishi",
+      "last_name": "Bava",
+      "email": "hiyer@example.com",
+      "billing": {
+        "phone": "7763868644",
+        "city": "Tumkur"
+      },
+      "date_created": "2026-09-24T22:13:19.001077"
+    },
+    {
+      "id": 14,
+      "first_name": "Yasti",
+      "last_name": "Wagle",
+      "email": "dipta09@example.net",
+      "billing": {
+        "phone": "+917585109273",
+        "city": "Bhiwandi"
+      },
+      "date_created": "2026-02-19T08:01:54.050123"
+    },
+    {
+      "id": 15,
+      "first_name": "Jagat",
+      "last_name": "Krishna",
+      "email": "ati02@example.net",
+      "billing": {
+        "phone": "0464257751",
+        "city": "Serampore"
+      },
+      "date_created": "2026-09-06T19:23:20.185909"
+    },
+    {
+      "id": 16,
+      "first_name": "Pranit",
+      "last_name": "Hayer",
+      "email": "eshanacomar@example.com",
+      "billing": {
+        "phone": "8682459963",
+        "city": "Gangtok"
+      },
+      "date_created": "2026-07-12T18:33:57.126726"
+    },
+    {
+      "id": 17,
+      "first_name": "Ranbir",
+      "last_name": "Dutta",
+      "email": "qgill@example.net",
+      "billing": {
+        "phone": "+916633620775",
+        "city": "Ramagundam"
+      },
+      "date_created": "2026-02-16T14:25:25.449405"
+    },
+    {
+      "id": 18,
+      "first_name": "Aarini",
+      "last_name": "Madan",
+      "email": "isaac83@example.net",
+      "billing": {
+        "phone": "0471604135",
+        "city": "Deoghar"
+      },
+      "date_created": "2026-02-16T08:27:43.113578"
+    },
+    {
+      "id": 19,
+      "first_name": "Forum",
+      "last_name": "Ben",
+      "email": "ridhidixit@example.net",
+      "billing": {
+        "phone": "4496102255",
+        "city": "Giridih"
+      },
+      "date_created": "2026-02-20T21:11:29.631539"
+    },
+    {
+      "id": 20,
+      "first_name": "Harinakshi",
+      "last_name": "Bhavsar",
+      "email": "dshan@example.net",
+      "billing": {
+        "phone": "+919623777332",
+        "city": "Orai"
+      },
+      "date_created": "2026-05-28T09:28:00.381903"
+    },
+    {
+      "id": 21,
+      "first_name": "Gabriel",
+      "last_name": "Shenoy",
+      "email": "luthrakrishna@example.com",
+      "billing": {
+        "phone": "6463384637",
+        "city": "Begusarai"
+      },
+      "date_created": "2026-03-16T14:54:56.171245"
+    },
+    {
+      "id": 22,
+      "first_name": "Mahika",
+      "last_name": "Rastogi",
+      "email": "adityaluthra@example.net",
+      "billing": {
+        "phone": "01922230774",
+        "city": "Raichur"
+      },
+      "date_created": "2026-08-14T13:36:10.691451"
+    },
+    {
+      "id": 23,
+      "first_name": "Faris",
+      "last_name": "Kapadia",
+      "email": "chakrabortypahal@example.com",
+      "billing": {
+        "phone": "+918252148888",
+        "city": "Kadapa"
+      },
+      "date_created": "2026-06-17T13:53:52.253503"
+    },
+    {
+      "id": 24,
+      "first_name": "Sathvik",
+      "last_name": "Keer",
+      "email": "abhimanyu63@example.org",
+      "billing": {
+        "phone": "7439543602",
+        "city": "Raichur"
+      },
+      "date_created": "2026-03-21T02:07:02.320965"
+    },
+    {
+      "id": 25,
+      "first_name": "Yuvraj",
+      "last_name": "Memon",
+      "email": "bhattacharyyaurvashi@example.net",
+      "billing": {
+        "phone": "09464074016",
+        "city": "Bhagalpur"
+      },
+      "date_created": "2026-01-01T08:11:35.094368"
+    },
+    {
+      "id": 26,
+      "first_name": "Riya",
+      "last_name": "Chatterjee",
+      "email": "bmittal@example.com",
+      "billing": {
+        "phone": "09863768295",
+        "city": "Sikar"
+      },
+      "date_created": "2026-08-18T18:13:06.009248"
+    },
+    {
+      "id": 27,
+      "first_name": "Harrison",
+      "last_name": "Swamy",
+      "email": "garima32@example.net",
+      "billing": {
+        "phone": "+915530103875",
+        "city": "Jamalpur"
+      },
+      "date_created": "2026-09-29T14:43:42.161210"
+    },
+    {
+      "id": 28,
+      "first_name": "Gaurika",
+      "last_name": "Bala",
+      "email": "barmanomya@example.com",
+      "billing": {
+        "phone": "08532930809",
+        "city": "Munger"
+      },
+      "date_created": "2026-06-19T21:17:55.122863"
+    },
+    {
+      "id": 29,
+      "first_name": "Gaurang",
+      "last_name": "Madan",
+      "email": "nsehgal@example.com",
+      "billing": {
+        "phone": "3691893771",
+        "city": "Nellore"
+      },
+      "date_created": "2026-10-07T07:26:10.500453"
+    },
+    {
+      "id": 30,
+      "first_name": "Yahvi",
+      "last_name": "Vaidya",
+      "email": "farhanmitter@example.org",
+      "billing": {
+        "phone": "05863499944",
+        "city": "Nagpur"
+      },
+      "date_created": "2026-04-15T09:45:03.195729"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "customer_id": 8,
+      "status": "on-hold",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-01-31T23:40:00.430877",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "customer_id": 5,
+      "status": "completed",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-08-13T20:08:26.407010",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "customer_id": 24,
+      "status": "completed",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-03-27T21:39:06.316700",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "customer_id": 29,
+      "status": "pending",
+      "total": "3798",
+      "currency": "INR",
+      "date_created": "2026-09-08T03:22:37.428844",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "customer_id": 9,
+      "status": "pending",
+      "total": "4347",
+      "currency": "INR",
+      "date_created": "2026-06-22T04:45:24.268693",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "customer_id": 24,
+      "status": "pending",
+      "total": "4798",
+      "currency": "INR",
+      "date_created": "2026-07-15T09:59:01.295186",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1007,
+      "customer_id": 29,
+      "status": "completed",
+      "total": "2447",
+      "currency": "INR",
+      "date_created": "2026-08-18T12:48:52.902231",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1008,
+      "customer_id": 13,
+      "status": "cancelled",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-02-01T07:39:55.720592",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1009,
+      "customer_id": 29,
+      "status": "processing",
+      "total": "2598",
+      "currency": "INR",
+      "date_created": "2026-03-15T04:30:43.638984",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1010,
+      "customer_id": 24,
+      "status": "completed",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-09-11T23:55:30.477683",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1011,
+      "customer_id": 4,
+      "status": "processing",
+      "total": "2598",
+      "currency": "INR",
+      "date_created": "2026-02-17T01:46:28.925108",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1012,
+      "customer_id": 1,
+      "status": "completed",
+      "total": "4298",
+      "currency": "INR",
+      "date_created": "2026-02-13T01:09:24.966404",
+      "line_items": [
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "customer_id": 12,
+      "status": "on-hold",
+      "total": "6997",
+      "currency": "INR",
+      "date_created": "2026-01-07T16:53:45.742593",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1014,
+      "customer_id": 24,
+      "status": "pending",
+      "total": "4797",
+      "currency": "INR",
+      "date_created": "2026-09-14T11:13:20.942454",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "customer_id": 27,
+      "status": "pending",
+      "total": "5097",
+      "currency": "INR",
+      "date_created": "2026-07-19T01:32:33.913654",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1016,
+      "customer_id": 11,
+      "status": "completed",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-01-21T12:24:40.673688",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1017,
+      "customer_id": 7,
+      "status": "pending",
+      "total": "3447",
+      "currency": "INR",
+      "date_created": "2026-05-24T16:25:40.095496",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1018,
+      "customer_id": 12,
+      "status": "on-hold",
+      "total": "4798",
+      "currency": "INR",
+      "date_created": "2026-07-30T00:44:28.357057",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1019,
+      "customer_id": 15,
+      "status": "processing",
+      "total": "5597",
+      "currency": "INR",
+      "date_created": "2026-04-07T14:38:48.505526",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1020,
+      "customer_id": 14,
+      "status": "completed",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-04-20T20:09:25.348131",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "customer_id": 27,
+      "status": "pending",
+      "total": "2199",
+      "currency": "INR",
+      "date_created": "2026-08-01T10:52:07.178923",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1022,
+      "customer_id": 19,
+      "status": "pending",
+      "total": "2447",
+      "currency": "INR",
+      "date_created": "2026-02-11T05:13:58.965410",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1023,
+      "customer_id": 2,
+      "status": "on-hold",
+      "total": "5198",
+      "currency": "INR",
+      "date_created": "2026-06-22T23:24:53.885645",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1024,
+      "customer_id": 13,
+      "status": "on-hold",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-07-26T13:02:46.149746",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1025,
+      "customer_id": 21,
+      "status": "on-hold",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-07-19T08:00:16.279728",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1026,
+      "customer_id": 13,
+      "status": "completed",
+      "total": "1299",
+      "currency": "INR",
+      "date_created": "2026-04-22T00:03:49.148742",
+      "line_items": [
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1027,
+      "customer_id": 9,
+      "status": "processing",
+      "total": "4147",
+      "currency": "INR",
+      "date_created": "2026-02-08T17:08:50.744454",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1028,
+      "customer_id": 14,
+      "status": "cancelled",
+      "total": "2598",
+      "currency": "INR",
+      "date_created": "2026-10-14T07:32:20.798670",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1029,
+      "customer_id": 8,
+      "status": "completed",
+      "total": "3498",
+      "currency": "INR",
+      "date_created": "2026-05-29T11:49:18.781129",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1030,
+      "customer_id": 28,
+      "status": "processing",
+      "total": "2548",
+      "currency": "INR",
+      "date_created": "2026-05-11T13:18:30.229731",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1031,
+      "customer_id": 24,
+      "status": "completed",
+      "total": "1299",
+      "currency": "INR",
+      "date_created": "2026-04-11T13:40:56.898568",
+      "line_items": [
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1032,
+      "customer_id": 24,
+      "status": "completed",
+      "total": "1648",
+      "currency": "INR",
+      "date_created": "2026-01-02T15:04:19.257945",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1033,
+      "customer_id": 27,
+      "status": "pending",
+      "total": "2199",
+      "currency": "INR",
+      "date_created": "2026-02-01T01:24:37.860111",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1034,
+      "customer_id": 12,
+      "status": "completed",
+      "total": "2998",
+      "currency": "INR",
+      "date_created": "2026-10-11T14:09:09.236444",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1035,
+      "customer_id": 8,
+      "status": "pending",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-07-06T03:37:49.877321",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1036,
+      "customer_id": 22,
+      "status": "processing",
+      "total": "4647",
+      "currency": "INR",
+      "date_created": "2026-08-21T23:03:57.897956",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1037,
+      "customer_id": 20,
+      "status": "on-hold",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-10-13T11:16:02.729938",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1038,
+      "customer_id": 10,
+      "status": "cancelled",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-01-30T23:32:48.796211",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1039,
+      "customer_id": 17,
+      "status": "on-hold",
+      "total": "3347",
+      "currency": "INR",
+      "date_created": "2026-01-14T09:02:49.934896",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1040,
+      "customer_id": 13,
+      "status": "cancelled",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-05-15T23:46:20.923266",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1041,
+      "customer_id": 27,
+      "status": "on-hold",
+      "total": "3348",
+      "currency": "INR",
+      "date_created": "2026-06-14T20:19:56.205126",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1042,
+      "customer_id": 25,
+      "status": "on-hold",
+      "total": "5997",
+      "currency": "INR",
+      "date_created": "2026-09-28T09:04:46.046349",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1043,
+      "customer_id": 29,
+      "status": "pending",
+      "total": "4647",
+      "currency": "INR",
+      "date_created": "2026-06-17T21:29:24.287430",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1044,
+      "customer_id": 24,
+      "status": "on-hold",
+      "total": "6997",
+      "currency": "INR",
+      "date_created": "2026-07-04T09:34:24.257670",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1045,
+      "customer_id": 23,
+      "status": "on-hold",
+      "total": "1799",
+      "currency": "INR",
+      "date_created": "2026-09-29T09:08:43.313801",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1046,
+      "customer_id": 7,
+      "status": "pending",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-01-20T03:11:16.277515",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1047,
+      "customer_id": 16,
+      "status": "processing",
+      "total": "2199",
+      "currency": "INR",
+      "date_created": "2026-03-10T06:59:27.224094",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1048,
+      "customer_id": 14,
+      "status": "cancelled",
+      "total": "1799",
+      "currency": "INR",
+      "date_created": "2026-05-20T10:08:12.999869",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1049,
+      "customer_id": 5,
+      "status": "processing",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-06-21T01:07:42.379067",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1050,
+      "customer_id": 28,
+      "status": "pending",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-01-12T11:30:02.669984",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1051,
+      "customer_id": 9,
+      "status": "completed",
+      "total": "6997",
+      "currency": "INR",
+      "date_created": "2026-09-28T21:22:41.877684",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1052,
+      "customer_id": 27,
+      "status": "completed",
+      "total": "3347",
+      "currency": "INR",
+      "date_created": "2026-06-25T06:18:04.186504",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1053,
+      "customer_id": 4,
+      "status": "processing",
+      "total": "2199",
+      "currency": "INR",
+      "date_created": "2026-03-15T15:50:34.512351",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1054,
+      "customer_id": 16,
+      "status": "on-hold",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-03-29T04:58:38.587899",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1055,
+      "customer_id": 4,
+      "status": "cancelled",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-02-20T22:21:16.242013",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1056,
+      "customer_id": 17,
+      "status": "cancelled",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-01-08T07:12:06.638585",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1057,
+      "customer_id": 16,
+      "status": "pending",
+      "total": "2548",
+      "currency": "INR",
+      "date_created": "2026-06-12T06:30:31.940575",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1058,
+      "customer_id": 1,
+      "status": "processing",
+      "total": "4147",
+      "currency": "INR",
+      "date_created": "2026-05-18T09:01:41.278202",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1059,
+      "customer_id": 9,
+      "status": "pending",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-05-10T02:32:51.012056",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1060,
+      "customer_id": 21,
+      "status": "on-hold",
+      "total": "5147",
+      "currency": "INR",
+      "date_created": "2026-08-19T18:57:59.547100",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1061,
+      "customer_id": 10,
+      "status": "on-hold",
+      "total": "3498",
+      "currency": "INR",
+      "date_created": "2026-07-26T19:56:15.836263",
+      "line_items": [
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1062,
+      "customer_id": 11,
+      "status": "on-hold",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-04-03T19:52:56.598166",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1063,
+      "customer_id": 18,
+      "status": "processing",
+      "total": "5997",
+      "currency": "INR",
+      "date_created": "2026-09-01T16:12:14.014388",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1064,
+      "customer_id": 15,
+      "status": "on-hold",
+      "total": "2447",
+      "currency": "INR",
+      "date_created": "2026-05-16T10:52:33.437407",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1065,
+      "customer_id": 30,
+      "status": "on-hold",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-04-28T06:07:12.354035",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1066,
+      "customer_id": 15,
+      "status": "pending",
+      "total": "3348",
+      "currency": "INR",
+      "date_created": "2026-05-06T22:40:30.583506",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1067,
+      "customer_id": 18,
+      "status": "on-hold",
+      "total": "4347",
+      "currency": "INR",
+      "date_created": "2026-03-28T07:55:12.212779",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1068,
+      "customer_id": 1,
+      "status": "processing",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-01-29T10:11:36.339863",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1069,
+      "customer_id": 19,
+      "status": "completed",
+      "total": "799",
+      "currency": "INR",
+      "date_created": "2026-07-20T07:29:33.501434",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1070,
+      "customer_id": 28,
+      "status": "cancelled",
+      "total": "3347",
+      "currency": "INR",
+      "date_created": "2026-01-08T21:45:33.710507",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1071,
+      "customer_id": 8,
+      "status": "on-hold",
+      "total": "4647",
+      "currency": "INR",
+      "date_created": "2026-02-26T17:08:56.964527",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1072,
+      "customer_id": 30,
+      "status": "processing",
+      "total": "3348",
+      "currency": "INR",
+      "date_created": "2026-07-30T03:01:27.795469",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1073,
+      "customer_id": 23,
+      "status": "cancelled",
+      "total": "1799",
+      "currency": "INR",
+      "date_created": "2026-01-17T23:40:57.041832",
+      "line_items": [
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1074,
+      "customer_id": 24,
+      "status": "processing",
+      "total": "2598",
+      "currency": "INR",
+      "date_created": "2026-05-19T12:44:03.248302",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1075,
+      "customer_id": 27,
+      "status": "cancelled",
+      "total": "5097",
+      "currency": "INR",
+      "date_created": "2026-02-16T14:53:51.709721",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        },
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1076,
+      "customer_id": 8,
+      "status": "completed",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-04-16T16:20:54.416912",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1077,
+      "customer_id": 16,
+      "status": "on-hold",
+      "total": "4797",
+      "currency": "INR",
+      "date_created": "2026-02-28T10:12:14.668356",
+      "line_items": [
+        {
+          "name": "Wireless Mouse",
+          "price": 799,
+          "quantity": 1
+        },
+        {
+          "name": "Webcam",
+          "price": 1799,
+          "quantity": 1
+        },
+        {
+          "name": "Keyboard",
+          "price": 2199,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1078,
+      "customer_id": 6,
+      "status": "cancelled",
+      "total": "1299",
+      "currency": "INR",
+      "date_created": "2026-09-07T13:23:58.130080",
+      "line_items": [
+        {
+          "name": "Laptop Stand",
+          "price": 1299,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1079,
+      "customer_id": 24,
+      "status": "cancelled",
+      "total": "349",
+      "currency": "INR",
+      "date_created": "2026-03-21T10:02:22.106482",
+      "line_items": [
+        {
+          "name": "USB-C Cable",
+          "price": 349,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1080,
+      "customer_id": 27,
+      "status": "pending",
+      "total": "2999",
+      "currency": "INR",
+      "date_created": "2026-07-30T17:50:32.466029",
+      "line_items": [
+        {
+          "name": "Headphones",
+          "price": 2999,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+}
